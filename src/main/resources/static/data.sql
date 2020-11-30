@@ -1,0 +1,5 @@
+--insert into User
+--values(0,'User');
+--
+--insert into User
+--values(5,'Admin');
