@@ -13,7 +13,7 @@ public class Photo {
     @Column(name = "book", columnDefinition="CLOB")
     private char[] book;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = true, insertable = true, updatable = true)
     private User user;
 
